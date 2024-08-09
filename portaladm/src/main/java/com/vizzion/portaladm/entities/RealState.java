@@ -11,6 +11,7 @@ import java.util.Date;
 @Table(name = "RealState")
 public class RealState {
 
+    @Id
     @Column(name = "id_Realstate")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id_RealState;

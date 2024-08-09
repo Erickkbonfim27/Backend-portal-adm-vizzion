@@ -22,7 +22,7 @@ public class UserService {
     ModelMapper modelMapper = new ModelMapper();
 
     public User saveNewUser(createNewUserDto dto){
-        User userAlreadyExists = userRepository.findOneByUserCpf(dto.getCpf());
+        User userAlreadyExists = userRepository.findUserByCpf(dto.getCpf());
         if (userAlreadyExists != null){
             throw new IllegalArgumentException("Usuario ja existente");
         }

@@ -10,6 +10,7 @@ import java.util.Date;
 @Data
 public class Addres {
 
+    @Id
     @Column(name = "id_address")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id_address;

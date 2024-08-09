@@ -9,10 +9,11 @@ import java.util.Date;
 
 @Entity
 @Data
-@Table(name = "User")
+@Table(name = "UserOrClient")
 public class User {
 
-    @Column(name = "id_user")
+    @Id
+    @Column(name = "id_UserOrClient")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id_User;
 
